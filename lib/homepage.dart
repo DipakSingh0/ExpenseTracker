@@ -14,6 +14,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+
   //collect user input
   final _textcontrollerAMOUNT = TextEditingController();
   final _textcontrollerITEM = TextEditingController();
@@ -39,7 +40,7 @@ class _HomePageState extends State<HomePage> {
           return StatefulBuilder(
             builder: (BuildContext context, setState) {
               return AlertDialog(
-                title: Text('N E W  T R A N S A C T I O N'),
+                title: Text('N E W T R A N S A C T I O N',style: TextStyle(fontSize: 20),),
                 content: SingleChildScrollView(
                   child: Column(
                     children: [
@@ -150,8 +151,9 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         backgroundColor: Colors.grey[300],
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(10.0),
           child: Column(children: [
+            SizedBox(height: 35),
             TopNeuCard(
               balance: (GoogleSheetsApi.calculateIncome() -
                       GoogleSheetsApi.calculateExpense())
@@ -165,7 +167,7 @@ class _HomePageState extends State<HomePage> {
                       child: Column(
                 children: [
                   SizedBox(
-                    height: 20,
+                    height: 16,
                   ),
                   Expanded(
                       child: GoogleSheetsApi.loading == true

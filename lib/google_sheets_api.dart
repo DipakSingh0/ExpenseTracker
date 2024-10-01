@@ -3,7 +3,6 @@ import 'package:gsheets/gsheets.dart';
 class GoogleSheetsApi {
   //create credentials
   static const _credentials = r'''
-
 {
   "type": "service_account",
   "project_id": "flutter-437220",
@@ -17,8 +16,6 @@ class GoogleSheetsApi {
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/flutterghseet%40flutter-437220.iam.gserviceaccount.com",
   "universe_domain": "googleapis.com"
 }
-
-
   ''';
   //set up and connect to the spreadsheet
 

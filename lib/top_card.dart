@@ -15,7 +15,7 @@ class TopNeuCard extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.all(12.0),
         child: Container(
-            height: 200,
+            height: 220,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 color: Colors.grey[300],
@@ -33,12 +33,13 @@ class TopNeuCard extends StatelessWidget {
                     spreadRadius: 1.0,
                   ),
                 ]),
+                
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text('B A L A N C E',
-                      style: TextStyle(color: Colors.grey[500], fontSize: 16)),
+                      style: TextStyle(color: Colors.grey[600], fontSize: 26)),
                   Text('Rs. ' + balance,
                       style: TextStyle(color: Colors.grey[800], fontSize: 40)),
                   Padding(
@@ -59,7 +60,7 @@ class TopNeuCard extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text('Rs.'),
-                                    Text( income),
+                                    Text(income),
                                   ],
                                 ),
                               ],
