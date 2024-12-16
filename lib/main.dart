@@ -13,7 +13,7 @@ void main() async {
   await GoogleSheetsApi().init();
 
   //testing connection by fetching first
-  // await GoogleSheetsApi.testConnection();
+  await GoogleSheetsApi.testConnection();
 
   runApp(const MyApp());
 }

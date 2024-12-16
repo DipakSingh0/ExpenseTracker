@@ -6,9 +6,7 @@ class TopNeuCard extends StatelessWidget {
   final String expense;
 
   TopNeuCard(
-      {required this.balance, 
-      required this.income, 
-      required this.expense});
+      {required this.balance, required this.income, required this.expense});
 
   @override
   Widget build(BuildContext context) {
@@ -33,14 +31,13 @@ class TopNeuCard extends StatelessWidget {
                     spreadRadius: 1.0,
                   ),
                 ]),
-                
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text('B A L A N C E',
                       style: TextStyle(color: Colors.grey[600], fontSize: 26)),
-                  Text('Rs. ' + balance,
+                  Text('Rs. $balance',
                       style: TextStyle(color: Colors.grey[800], fontSize: 40)),
                   Padding(
                     padding: const EdgeInsets.all(18.0),
